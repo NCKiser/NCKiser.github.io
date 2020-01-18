@@ -1,9 +1,0 @@
----
-layout: project
-title: "Test Project number1"
-date: 2020-01-13
-project: Name
-thumbnail: testimage.jpg
----
-
-Test project

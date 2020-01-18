@@ -2,15 +2,16 @@
 layout: default
 title: Noah Kiser Projects
 ---
+<div class="posts">
 	<h1>List of Projects:</h1>
-	<ul class="posts">
+	<ul>
 	
 	  {% for post in site.posts %}
 		{% if post.project %}
-	    <li style="display:inline-block;padding-right:1em;text-align:center">
+	    <li style="display:inline-block;text-align:center;margin-right:20px;margin-bottom:30px;vertical-align:middle;">
 			<a href="{{ post.url }}" title="{{ post.title }}">
 			{% if post.thumbnail %}
-				<img src="/assets/{{ post.project }}/{{ post.thumbnail }}" alt="{{ post.project }}: {{ post.thumbnail }}" style="width:3in">
+				<img src="{{ post.thumbnail }}" alt="{{ post.title }}" style="height:4in;max-width:70vw;">
 				<br>
 			{% endif %}
 			{{ post.title }}</a>
@@ -18,3 +19,4 @@ title: Noah Kiser Projects
 		{% endif %}
 	  {% endfor %}
 	</ul>
+</div>
