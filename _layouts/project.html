@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<h1>{{ page.title }}</h1>
+{% if page.thumbnail %}
+<img src="/assets/{{ page.project }}/{{ page.thumbnail }}" alt="{{ page.project }}: {{ page.thumbnail }}" style="width:100%">
+<br>
+{% endif %}
+<div class="post">
+  {{ content }}
+</div>

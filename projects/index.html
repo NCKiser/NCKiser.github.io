@@ -7,11 +7,13 @@ title: Noah Kiser Projects
 	
 	  {% for post in site.posts %}
 		{% if post.project %}
-	    <li>
+	    <li style="display:inline-block;padding-right:1em;text-align:center">
+			<a href="{{ post.url }}" title="{{ post.title }}">
 			{% if post.thumbnail %}
-			<img src="/assets/{{ post.project }}/{{ post.thumbnail }}" alt="{{ post.project }}: {{ post.thumbnail }}" style="height:1.5em;">
+				<img src="/assets/{{ post.project }}/{{ post.thumbnail }}" alt="{{ post.project }}: {{ post.thumbnail }}" style="width:3in">
+				<br>
 			{% endif %}
-			<a href="{{ post.url }}" title="{{ post.title }}">{{post.project}}: {{ post.title }}</a>
+			{{ post.title }}</a>
 		</li>
 		{% endif %}
 	  {% endfor %}
