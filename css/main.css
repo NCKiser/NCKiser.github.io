@@ -1,9 +1,15 @@
+@font-face {
+  font-family: "Normschrift";
+  src: url(/assets/isocpeur.ttf) format("truetype");
+}
+
 body {
-    margin: 60px auto;
+    margin: 20px auto;
     width: 80%;
 	background-color: #181818;
 	color: #fff;
-	font-family:'Helvetica', 'Arial', 'Sans-Serif';
+	font-family: 'Normschrift', 'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 1.5em;
 }
 a {
 	color: #999;
@@ -36,32 +42,7 @@ a:hover {
 }
 
 .nav{
-	border-bottom: 1px solid #ffffff;
 	font-size: 1.5em;
 	font-weight: bold;
 	margin-bottom: 0px;
-}
-
-.r180 {
-  -webkit-transform:rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-
-.r90 {
-  -webkit-transform:rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-
-.r270 {
-  -webkit-transform:rotate(270deg);
-  -moz-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
-  -o-transform: rotate(270deg);
-  transform: rotate(270deg);
 }

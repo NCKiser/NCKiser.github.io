@@ -1,6 +1,6 @@
 ---
 layout: project
-title: "Trumper Tuner"
+title: "Trumpet Tuner"
 date: 2016-05-27
 project: Trumpet Tuner
 thumbnail: https://drive.google.com/uc?id=1DZMRzVWSRwsCzM3EMVdWmZhVPd26Meei
