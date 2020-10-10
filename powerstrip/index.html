@@ -12,18 +12,17 @@ title: Noah Kiser PowerStrip
         </script>
         <p>Switch Status:</p>
         <p>(1=On, 0=Off)</p>
-            <iframe id="calendar" src="https://0df64fqvq6.execute-api.us-east-1.amazonaws.com/dev/hello" style="border-width:1" width="20px" height="30px"  frameborder="0" scrolling="no"></iframe>
+            <iframe id="calendar" src="https://www.kiserserver.com/power_strip" style="border-width:1" width="20px" height="30px"  frameborder="0" scrolling="no"></iframe>
         <p></p>
         <input type="button" value="Turn On" onclick="submitOn()">
         <input type="button" value="Turn Off" onclick="submitOff()">
-        <input type="button" value="Toggle" onclick="submitToggle()">
 
         <script type="text/javascript">
             function submitOff() {
                 var xhr = new XMLHttpRequest();
                 xhr.onreadystatechange = function () {
                 }
-                xhr.open('get', 'https://0df64fqvq6.execute-api.us-east-1.amazonaws.com/dev/hello?command=0', true);
+                xhr.open('get', 'https://www.kiserserver.som/power_strip?command=0', true);
                 xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
                 xhr.send();
             }
@@ -31,15 +30,7 @@ title: Noah Kiser PowerStrip
                 var xhr = new XMLHttpRequest();
                 xhr.onreadystatechange = function () {
                 }
-                xhr.open('get', 'https://0df64fqvq6.execute-api.us-east-1.amazonaws.com/dev/hello?command=1', true);
-                xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
-                xhr.send();
-            }
-            function submitToggle() {
-                var xhr = new XMLHttpRequest();
-                xhr.onreadystatechange = function () {
-                }
-                xhr.open('get', 'https://0df64fqvq6.execute-api.us-east-1.amazonaws.com/dev/hello?command=2', true);
+                xhr.open('get', 'https://www.kiserserver.com/power_strip?command=1', true);
                 xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
                 xhr.send();
             }
